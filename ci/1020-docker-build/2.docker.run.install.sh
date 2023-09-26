@@ -6,6 +6,6 @@ export PROJECT_NAME="${CMD_PATH##*/}"
 echo $PROJECT_NAME
 cd $CMD_PATH
 
-docker pull ubuntu:22.04
+docker pull ubuntu:20.04
 
-docker run -i -v ./:/code -w /code ubuntu:22.04 /code/files/install.sh
+docker run -i -v ./:/code -w /code ubuntu:20.04 /code/files/install.sh
